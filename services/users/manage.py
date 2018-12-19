@@ -62,15 +62,15 @@ def seed_db():
     """Seeds the database."""
     # new
     db.session.add(User(
-        username='michael',
-        email='michael@reallynotreal.com',
-        password='greaterthaneight'
+        username='testuser',
+        email='test@mail.com',
+        password='123456'
     ))
     # new
     db.session.add(User(
-        username='michaelherman',
-        email='michael@mherman.org',
-        password='greaterthaneight'
+        username='usertest',
+        email='mail@test.com',
+        password='654321'
     ))
     db.session.commit()
 
