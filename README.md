@@ -4,31 +4,31 @@
 
 # Running Locally
 
-## Set environment variable for client
+### Set environment variable for client
 
 ```
 export REACT_APP_USERS_SERVICE_URL=http://localhost
 ```
 
-## Build docker images
+### Build docker images
 
 ```
 docker-compose -f docker-compose-dev.yml build
 ```
 
-## Bring up docker containers
+### Bring up docker containers
 
 ```
 docker-compose -f docker-compose-dev.yml up -d
 ```
 
-## Set up database
+### Set up database
 
 ```
 docker-compose -f docker-compose-dev.yml run users python manage.py recreate-db
 ```
 
-## Seed database (optional)
+### Seed database (optional)
 
 ```
 docker-compose -f docker-compose-dev.yml run users python manage.py seed-db
