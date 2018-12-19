@@ -34,4 +34,4 @@ docker-compose -f docker-compose-dev.yml run users python manage.py recreate-db
 docker-compose -f docker-compose-dev.yml run users python manage.py seed-db
 ```
 
-Open browser to http://localhost:3007 for client. Backend API is running at http://localhost:5001.
+Open browser to http://localhost:3007 for client. Backend API can be accessed at http://localhost:5001.
