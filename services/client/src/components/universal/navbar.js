@@ -65,7 +65,7 @@ class Navbar extends Component {
         <div id="mySidebar" className="sidebar">
           {this.renderNav()}
         </div>
-        <div>
+        <div className="nav-bar">
           <div className="openbtn" onClick={this.handleToggle}>☰</div>
         </div>
       </div>
