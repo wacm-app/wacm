@@ -4,6 +4,8 @@ import { signInAction } from '../../actions';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+import Button from '../universal/button/button';
+
 import './signin.less';
 
 class Signin extends Component {
@@ -44,7 +46,7 @@ class Signin extends Component {
             />
           </div>
           <div className="signin-btn">
-            <button type="submit">Sign In</button>
+            <Button buttonType={'submit'} buttonText={'Sign In'}></Button>
           </div>
         </form>
         {this.errorMessage()}
